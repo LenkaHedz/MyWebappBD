@@ -58,9 +58,10 @@ public class SqlImpl {
         if( result.next() ){
             System.out.println( "Serial value for inserted record "+ result.toString() );
         }
+        
+     conn.commit();
 
         */
-     conn.commit();
     }
 
     public List<Car> listCars() throws SQLException {
